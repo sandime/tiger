@@ -1,0 +1,27 @@
+{
+  "name": "tiger",
+  "version": "1.0.0",
+  "description": "budget and money management app for creatives",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "[budget",
+    "creatives",
+    "artists",
+    "musicians",
+    "money",
+    "cool]"
+  ],
+  "author": "sherri cruz",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.12.2",
+    "express": "^4.12.3",
+    "mongoose": "^3.8.25",
+    "morgan": "^1.5.2"
+  }
+}
