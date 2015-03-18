@@ -1,8 +1,8 @@
 /**
  * Created by SHERRI on 3/17/15.
  */
-
-angular.module('app.routes', ['ngRoute'])
+// inject ngRoute for all our routing needs
+angular.module('app.route', ['ngRoute'])
 
     .config(function($routeProvider, $locationProvider) {
 
@@ -10,13 +10,15 @@ angular.module('app.routes', ['ngRoute'])
 
             // route for the home page
             .when('/', {
-                templateUrl : 'app/views/pages/home.html'
+                templateUrl : 'app/views/pages/home.html',
+                controller: 'homeController',
+                controllerAs: 'home'
             })
 
             // login page
             .when('/login', {
                 templateUrl : 'app/views/pages/login.html',
-                controller  : 'mainController',
+                controller  : 'loginController',
                 controllerAs: 'login'
             })
 
@@ -40,7 +42,7 @@ angular.module('app.routes', ['ngRoute'])
                 controller: 'contactController',
                 controllerAs: 'contact'
             });
-
+//set app up to have pretty URLS
         $locationProvider.html5Mode(true);
 
     });
