@@ -2,9 +2,9 @@
  * Created by SHERRI on 3/17/15.
  */
 // inject ngRoute for all our routing needs
-angular.module('app.route', ['ngRoute'])
+var app = angular.module('routeRoutes', ['ngRoute'])
 
-    .config(function($routeProvider, $locationProvider) {
+    app.config(function($routeProvider, $locationProvider) {
 
         $routeProvider
 
