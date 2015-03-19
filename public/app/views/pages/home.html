@@ -1,13 +1,16 @@
 <div class="jumbotron text-center">
     <div class="container">
+       What's your name? <input type="text" ng-model="name"> </input>
         <h1>Smart money for creatives</h1>
-        <h3>... because it's your money</h3>
+        <h3>... because it's your money, {{name | uppercase }}</h3>
         <img src="http://i306.photobucket.com/albums/nn260/roosterwooster/tiger.jpg" alt="tiger" style= "padding: 10px; width: 75%">
         <!-- button to budget-->
-        <div>
-            <p><a class="btn btn-primary btn-lg" href="app/views/pages/budget.html" role="button">Get started!</a>
-            </p>
+
+        <div ng-controller="aboutController">
+            <button ng-click="toggle()">Get Started!</button>
+
         </div>
+
 
         <div>
             <p>Just because you're a writer, artist, musician, art historian ... you get the idea ... doesn't mean a lifetime of scraping by. Save, invest and budget with TigerApp.</p>
