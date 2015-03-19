@@ -1,4 +1,23 @@
 <div class="jumbotron text-center">
-    <h1>Create Budget</h1>
-    <p>{{budget.message}}</p>
-</div>
+    <h1>Create a monthly household budget</h1>
+    <h7>First, we'll create a monthly budget.</h7>
+
+    <form name="budgetForm" ng-controller="FormController" novalidate>
+        <!--  <div ng-show='message'>{{message}}</div> -->
+        <label>Rent or mortgage</label>
+        <input type="number" ng-model="user.rent" name="rent" required>
+        <br>
+        <br>
+        <label>Utilities</label>
+        <input type="number" ng-model="user.utilities" name="utilities" required>
+        <br>
+        <br>
+        <label>Auto payment</label>
+        <input type="number" ng-model="user.autoPayment" name="autoPayment" required>
+        <br>
+        <br>
+
+<input type="submit" value="Save" class="btn btn-primary">
+
+</form>
+    </div>
