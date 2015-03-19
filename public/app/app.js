@@ -6,13 +6,12 @@ angular.module('myApp', ['routerRoutes', 'ngAnimate'])
 
 //create the controller and inject Angular's
 // this will be the controller for the ENTIRE site
-    .controller('mainController', function() {
+   .controller('mainController', function() {
 
-     var vm = this;
+  var vm = this;
 
         // create a bigMessage variable to display in our view
-        vm.bigMessage = 'Smart money for creatives ...';
-
+       vm.bigMessage = 'Smart money for creatives ...';
     })
 
 // home page specific controller
