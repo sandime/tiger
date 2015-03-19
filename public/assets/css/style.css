@@ -1,5 +1,5 @@
 /* pops the content-views in */
-body                          { padding-top:50px; }
+body                          { padding-top:50px;}
 #content-views                { position:relative; }
 .ng-enter, .ng-leave          { width:100%; position:absolute; }
 
@@ -15,3 +15,6 @@ body                          { padding-top:50px; }
     -moz-animation:zoomOutDown 0.5s both ease-in;
     animation:zoomOutDown 0.5s both ease-in;
 }
+
+.jumbotron{
+    color:orangered}

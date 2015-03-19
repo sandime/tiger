@@ -1,8 +1,12 @@
+<!-- needs to be visible only when logged in -->
+
 <div class="jumbotron text-center">
     <h1>Create a monthly household budget</h1>
-    <h7>First, we'll create a monthly budget.</h7>
+    <h3>First, we'll create a monthly budget.</h3>
 
-    <form name="budgetForm" ng-controller="FormController" novalidate>
+    <!-- changed ng-controller to budget -->
+
+    <form name="budgetForm" ng-controller="budget" novalidate>
         <!--  <div ng-show='message'>{{message}}</div> -->
         <label>Rent or mortgage</label>
         <input type="number" ng-model="user.rent" name="rent" required>
