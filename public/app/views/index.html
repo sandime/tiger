@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="myApp">
 <head>
     <meta charset="utf-8">
     <title>TigerApp</title>
@@ -14,9 +14,8 @@
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css">
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css">
 
-
-    <!-- JS -->
     <!-- load angular and angular-route via CDN -->
+
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.8/angular.min.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.8/angular-route.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.8/angular-animate.js"></script>
@@ -32,8 +31,9 @@
     <!-- angular app files -->
     <script src="app/app.route.js"></script>
     <script src="app/app.js"></script>
+    <script src="app/main.js"></script>
 </head>
-<body class="container" ng-app="myApp" ng-controller="mainController as main">
+<body class="container" ng-controller="mainController as main">
 
 <!-- HEADER AND NAVBAR -->
 <header>

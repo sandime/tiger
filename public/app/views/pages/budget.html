@@ -1,73 +1,16 @@
-<!-- needs to be visible only when logged in -->
 
 <div class="jumbotron text-center">
     <h1>What are your expenses?</h1>
     <h3>First, we'll figure out your monthly expenses, then we'll get an estimated monthly income and come up with a monthly budget.</h3>
-    <div>
-        <h2>Calculator</h2>
+    <h2>Calculator</h2>
 
-        <div ng-controller="budgetController">
-            <form>
-                <li>Rent: <input type="number" ng-model="rent"/> </li>
-                <li>Utilities: <input type="number" ng-model="utilities"/> </li>
-                <li>Auto Payment<input type="number" ng-model="autoPayment"/>  </li>
-
-                <li><b>Total Expenses</b><input type="number" value="{{totalExpenses()}}"/>
-                </li>
-                <li>Income<input type="number" ng-model="income"/>  </li>
-
-                <li><b>Surplus or Deficit</b><input type="number" value="{{difference()}}"/>  </li>
-            </form>
-        </div>
+    <div ng-controller="budgetController">
+        <form>
+            <li>rent: <input type="text" ng-model="rent">
+            <li>utilities: <input type="text" ng-model="utilities">
+            <li>Total Expenses <input type="text" ng-model="totalExpenses">
+                {{totalExpenses}}
+        </form>
     </div>
-</div>
-<script>
-
-
-    function budgetController($scope) {
-
-        $scope.totalExpenses = function(){
-            var rent = $scope.rent;
-            var utilities = $scope.utilities;
-            var autoPayment = $scope.autoPayment;
-            return rent + utilities + autoPayment;
-        };
-
-
-        $scope.difference = function(){
-            var totalExpenses = $scope.totalExpenses ();
-            var income = $scope.income;
-            return income + totalExpenses;
-        };
-
-
-    }
-</script>
-
-<!--
-
-<div class="jumbotron text-center">
-    <h1>Create a monthly household budget</h1>
-    <h3>First, we'll create a monthly budget.</h3>
-
-
-    <form name="budgetForm" ng-controller="budget" novalidate>
-        <!--  <div ng-show='message'>{{message}}</div>
-        <label>Rent or mortgage</label>
-        <input type="number" ng-model="user.rent" name="rent" required>
-        <br>
-        <br>
-        <label>Utilities</label>
-        <input type="number" ng-model="user.utilities" name="utilities" required>
-        <br>
-        <br>
-        <label>Auto payment</label>
-        <input type="number" ng-model="user.autoPayment" name="autoPayment" required>
-        <br>
-        <br>
-
-<input type="submit" value="Save" class="btn btn-primary">
-
-</form>
     </div>
-    <!-- changed ng-controller to budget -->
+
