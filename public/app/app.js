@@ -50,7 +50,7 @@ angular.module('myApp', ['routerRoutes', 'ngAnimate'])
         var vm = this;
 
         vm.message = 'Contact us';
-    })
+    });
 // budget page specific controller
     //.controller('budgetController', function() {
 
@@ -70,8 +70,7 @@ angular.module('myApp', ['routerRoutes', 'ngAnimate'])
                 return income + totalExpenses;
             };
 
-
-        };
+        }
 
 
 
