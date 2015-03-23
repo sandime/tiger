@@ -54,23 +54,16 @@ angular.module('myApp', ['routerRoutes', 'ngAnimate'])
 // budget page specific controller
     .controller('budgetController', function() {
 
-       // function budgetController($scope) {
+        $scope.totalExpenses = function () {
+            var rent = $scope.rent;
+            var utilities = $scope.utilities;
+            var autoPayment = $scope.autopayment;
+            return rent + utilities + autoPayment;
+        }
 
-           var totalExpenses = function () {
-                var rent = $scope.rent;
-                var utilities = $scope.utilities;
-                var autoPayment = $scope.autoPayment;
-                return rent + utilities + autoPayment;
-            };
+    });
 
 
-           var difference = function () {
-                var totalExpenses = $scope.totalExpenses();
-                var income = $scope.income;
-                return income + totalExpenses;
-            };
-
-        });
 
 
 
