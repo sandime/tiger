@@ -10,6 +10,7 @@
 }*/
 
 //calculations for budget
+/*
 function budgetController($scope) {
 
     $scope.totalExpenses = function () {

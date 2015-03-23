@@ -51,15 +51,32 @@ angular.module('myApp', ['routerRoutes', 'ngAnimate'])
 
         vm.message = 'Contact us';
     })
+// budget page specific controller
+    .controller('budgetController', function($scope) {
 
-    .controller('budgetController', function() {
-        // budget page specific controller
-        function budgetController($scope) {
-            $scope.$watch('rent + utilities', function (value) {
-                $scope.totalExpenses = value;
-            });
-        }
-    });
+      //  function budgetController($scope) {
+
+            $scope.totalExpenses = function () {
+                var rent = $scope.rent;
+                var utilities = $scope.utilities;
+                var autoPayment = $scope.autoPayment;
+                return rent + utilities + autoPayment;
+            };
+
+
+            $scope.difference = function () {
+                var totalExpenses = $scope.totalExpenses();
+                var income = $scope.income;
+                return income + totalExpenses;
+            };
+
+
+        });
+
+
+
+
+
 
 
 /*var myApp = angular.module('myApp',[]);
