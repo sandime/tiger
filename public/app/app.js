@@ -52,7 +52,7 @@ angular.module('myApp', ['routerRoutes', 'ngAnimate'])
         vm.message = 'Contact us';
     })
 // budget page specific controller
-    .controller('budgetController', function($scope) {
+    .controller('budgetController', function() {
 
        // function budgetController($scope) {
 
