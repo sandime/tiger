@@ -50,11 +50,11 @@ angular.module('myApp', ['routerRoutes', 'ngAnimate'])
         var vm = this;
 
         vm.message = 'Contact us';
-    });
+    })
 // budget page specific controller
-    //.controller('budgetController', function() {
+    .controller('budgetController', ['$scope', function($scope) {
 
-        function budgetController($scope) {
+       // function budgetController($scope) {
 
             $scope.totalExpenses = function () {
                 var rent = $scope.rent;
@@ -70,7 +70,7 @@ angular.module('myApp', ['routerRoutes', 'ngAnimate'])
                 return income + totalExpenses;
             };
 
-        }
+        }]);
 
 
 
