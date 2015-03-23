@@ -1,8 +1,13 @@
 
 //adds routes to our app
-angular.module('myApp', ['routerRoutes', 'ngAnimate'])
-//angular.module('myApp', ['ngAnimate', 'routerRoutes', 'app.route', 'authService', 'mainCtrl', 'userCtrl', 'userService'])
+//learning http://jsfiddle.net/sandime/zg1n8tm5/2/
+//var myModule = angular.module('myModule', []);
+//myModule.controller('myController', function($scope) {
+//}); var myApp =
 
+angular.module('myApp', ['routerRoutes', 'ngAnimate'])
+
+//angular.module('myApp', ['ngAnimate', 'routerRoutes', 'app.route', 'authService', 'mainCtrl', 'userCtrl', 'userService'])
 
 //create the controller and inject Angular's
 // this will be the controller for the ENTIRE site
@@ -55,3 +60,19 @@ angular.module('myApp', ['routerRoutes', 'ngAnimate'])
             });
         }
     });
+
+
+/*var myApp = angular.module('myApp',[]);
+
+ myApp.controller('ContactController', ['$scope', function($scope) {
+ $scope.contacts = ["hi@email.com", "hello@email.com"];
+
+ $scope.add = function() {
+ $scope.contacts.push($scope.contact);
+ $scope.contact = "";
+ }
+ }]);
+
+ http://blog.jdriven.com/2013/03/how-to-create-singleton-angularjs-services-in-4-different-ways/
+ http://jonathancreamer.com/working-with-all-the-different-kinds-of-scopes-in-angular/
+ */
